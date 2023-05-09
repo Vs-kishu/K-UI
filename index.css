@@ -1,0 +1,87 @@
+@import url(Docs/docs.css);
+
+body{
+    background-color: var(--ui-background);
+}
+
+main {
+    padding: var(--space-xxlg);
+    padding: clamp(var(--space-lg), -0.875rem + 8.33vw, var(--space-xxlg));
+    gap: var(--space-xxlg);
+}
+
+/* Hero section  */
+
+.hero-text {
+    gap: var(--space-lg);
+    flex: 1 1 20rem;
+}
+
+.hero-banner {
+    flex: 1 2 20rem;
+}
+
+.hero-text h1 {
+    font-size: var(--fs-xxlg);
+    font-size: clamp(var(--fs-lg), -0.875rem + 8.33vw, var(--fs-xxlg));
+    color: var(--ui-text);
+
+}
+
+.hero-text p {
+    font-size: var(--fs-lg);
+    font-size: clamp(var(--fs-md), -0.875rem + 8.33vw, var(--fs-lg));
+    color:var(--ui-text-secondary);
+}
+
+/* CTA Section  */
+.cta-wrapper {
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cta-wrapper>* {
+    flex: 1 1 12rem;
+    text-align: center;
+}
+
+.ui-btn-cta {
+    gap: 0.3rem;
+}
+
+.ui-btn-cta p {
+    color: var(--ui-white);
+    font-size: inherit;
+}
+
+.ui-btn-cta * {
+    transition: all ease 0.3s;
+    transform: translateX(0);
+}
+
+.ui-btn-cta .fas {
+    opacity: 0;
+}
+
+.ui-btn-cta:hover * {
+    opacity: 1;
+    transform: translateX(calc(-1* var(--space-md)));
+}
+
+/* Get Started section  */
+
+.get-started {
+    gap: var(--space-lg);
+}
+
+.get-started h2 {
+    font-size: clamp(var(--fs-md), -0.875rem + 8.33vw, var(--fs-xlg));
+}
+
+@media screen and (max-width: 48em) {
+    .hero >*{
+        width: 100%;
+    }
+    
+}

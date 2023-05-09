@@ -1,0 +1,39 @@
+:root{
+  
+    /* Spacings */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xlg: 2.5rem;
+    --space-xxlg: 4rem;
+
+    /* Radius */
+    --radius-xs: 0.5rem;
+    --radius-sm: 1rem;
+    --radius-md: 1.5rem;
+    --radius-lg: 2rem;
+    --radius-xlg: 2.5rem;
+    --radius-xxlg: 4rem;
+    --radius-round: 50%;
+    
+    /* Font Family */
+
+    --ff-Heading:"Montserrat-Alternates", sans-serif;
+
+    /* Font weights */
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+    --fw-black: 900;
+
+    /* Font sizes */
+    --fs-sm: 0.8rem;
+    --fs-md: 1rem;
+    --fs-lg: 1.5rem;
+    --fs-xlg: 2rem;
+    --fs-xxlg: 2.5rem;
+    
+}

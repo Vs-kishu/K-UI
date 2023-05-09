@@ -1,0 +1,48 @@
+.ui-ratings-wrapper .fa-star{
+    color: var(--ui-warning);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.fa-star.icon-filled{
+    font-weight: 900;
+}
+
+.fa-star.icon-half-filled::before{
+    font-family: "Font Awesome 5 pro"; 
+    font-weight: 900;
+    content: '\f5c0';
+}
+
+.ui-ratings-badge{
+    align-self: center;
+    background-color: var(--ui-primary-color);
+    padding: 0.2em 0.5em; /* em is needed here to scale the badge according to its font size */
+    color: var(--ui-white);
+    font-size: var(--fs-sm);
+    border-radius: var(--radius-xs);
+}
+
+.ui-ratings-badge-green{
+    background-color: var(--ui-success);
+}
+
+.ui-ratings-badge-orange{
+    background-color: var(--ui-warning);
+}
+
+.ui-ratings-badge-red{
+    background-color: var(--ui-error);
+}
+
+.ratings-sm{
+    font-size: 0.8rem;
+}
+
+.ratings-md{
+    font-size: 1rem;
+}
+
+.ratings-lg{
+    font-size: 1.2rem;
+}

@@ -1,0 +1,63 @@
+.ui-alert{
+    --alert-color: var(--ui-red);
+    align-items: center;
+    gap: 1em;
+    width: 80vw;
+    max-width: 40em;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: 5px;
+    background-color: var(--ui-background);
+    box-shadow: var(--bs-light);
+    border-left: solid 4px var(--alert-color);
+    font-size: 1rem;
+    z-index: 90;
+}
+
+
+.ui-alert-icon{
+    font-size: 1em;
+    border-radius: 50%;
+    background-color: var(--alert-color);
+    color: var(--ui-background);
+    min-height: 1.8em;
+    min-width: 1.8em;
+    padding: 0;
+    display: grid;
+    place-content: center;
+}
+
+.ui-alert-text{
+    gap: 0.3125em;
+}
+
+.ui-alert-close-btn{
+    font-size: 1em;
+    color: var(--ui-gray);
+    margin-left: auto;
+}
+
+.ui-alert h3{
+    font-size: 1em;
+    color: var(--alert-color);
+}
+
+.ui-alert p{
+    font-size: 1em;
+    color: var(--ui-gray);
+}
+
+.ui-alert-warning{
+    --alert-color: var(--ui-warning);
+}
+
+.ui-alert-success{
+    --alert-color: var(--ui-success);
+}
+
+.ui-alert-info{
+    --alert-color: var(--ui-primary-color);
+}
+
+.ui-alert-error{
+    --alert-color: var(--ui-error);
+}

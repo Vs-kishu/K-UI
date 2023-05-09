@@ -1,0 +1,39 @@
+.input-form-wrapper{
+    gap: var(--space-lg);
+    width: 100%;
+}
+
+.ui-input-item{
+    padding: var(--space-xs);
+    border-radius: var(--radius-xs);
+    border: solid 2px var(--ui-primary-color);
+    color: var(--ui-text);
+    outline: solid 2px transparent;
+    outline-offset: 2px;
+    width: 100%;
+}
+
+
+.ui-input-item:focus{
+    box-shadow: 0 0 0 3px var(--ui-primary-overlay);
+}
+
+.input-success .ui-input-item{
+    border-color: var(--ui-success);
+}
+
+.input-success .input-validation{
+    color: var(--ui-success);
+}
+
+.input-error .ui-input-item{
+    border-color: var(--ui-error);
+}
+
+.input-error .input-validation{
+    color: var(--ui-error);
+}
+
+.ui-input-radio, .ui-input-checkbox{
+    accent-color : var(--ui-accent-color);
+}

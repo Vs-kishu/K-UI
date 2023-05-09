@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratings | K-UI</title>
+    <link rel="shortcut icon" href="../../assets/apple-touch-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../docs.css">
+</head>
+<body>
+            
+    <div class="modal-wrapper">
+        <aside id="sidebarMain" class="ui-drawer ui-drawer-modal">
+            <div class="ui-drawer-header ui-header">
+                <h2 class="ui-drawer-heading">Components</h2>
+            </div>
+            <div class="ui-drawer-content">
+                <ul class="fx-col">
+                    <a href="../Avatars/avatar.html" class="ui-btn ui-btn-transparent">
+                        Avatars
+                    </a>
+                    <a href="../Alerts/alert.html" class="ui-btn ui-btn-transparent">
+                        Alerts
+                    </a>
+                    <a href="../Badges/badge.html" class="ui-btn ui-btn-transparent">
+                        Badges
+                    </a>
+                    <a href="../buttons/buttons.html" class="ui-btn ui-btn-transparent">
+                        Buttons
+                    </a>
+                    <a href="../Cards/card.html" class="ui-btn ui-btn-transparent">
+                        Cards
+                    </a>
+                    <a href="../Grid/grids.html" class="ui-btn ui-hr-btn-icon ui-btn-transparent">
+                        Grid layouts
+                    </a>
+                    <a href="../Images/image.html" class="ui-btn ui-hr-btn-icon ui-btn-transparent">
+                        Image
+                    </a>
+                    <a href="../input/input.html" class="ui-btn ui-hr-btn-icon ui-btn-transparent">
+                        Input
+                    </a>
+                    <a href="../Lists/list.html" class="ui-btn ui-hr-btn-icon ui-btn-transparent">
+                        Lists
+                    </a>
+                    <a href="../Modals/modal.html" class="ui-btn ui-hr-btn-icon ui-btn-transparent">
+                        Modals
+                    </a>
+                    <a href="../Header/navigation.html" class="ui-btn ui-hr-btn-icon ui-btn-transparent">
+                        Navigation
+                    </a>
+                    <a href="#" class="ui-btn ui-hr-btn-icon ui-btn-transparent">
+                        Ratings
+                    </a>
+                    <a href="../Slider/slider.html" class="ui-btn ui-hr-btn-icon ui-btn-transparent">
+                        Sliders
+                    </a>
+                    <a href="../Snackbars/snackbar.html" class="ui-btn ui-hr-btn-icon ui-btn-transparent">
+                        Snackbars
+                    </a>
+                    <a href="../Text-Utilities/text-utilities.html" class="ui-btn ui-hr-btn-icon ui-btn-transparent">
+                        Text Utilities
+                    </a>
+                </ul>
+
+            </div>
+        </aside>
+    </div>
+
+    <header class="ui-header main-header d-fx f-wrap">
+        <button data-target="sidebarMain" class="ui-btn ui-btn-icon hamburger"><i class="fas fa-bars"></i></button>
+        <div class="ui-heading">
+            <a href="../../index.html">
+                <div class="header-brand">
+                    <img class="logo" src="../../assets/KUI.png" alt="K-UI Logo">
+                </div>
+            </a>
+        </div>
+        <nav class="ui-nav d-fx">
+            <a href="#" class="ui-btn ui-hr-btn-icon ui-btn-link">
+                Docs
+                <i class="fas fa-file"></i>
+            </a>
+            <a href="https://github.com/Vs-kishu" target="_blank" rel="noopener noreferrer" class="ui-btn ui-hr-btn-icon ui-btn-link">
+                Github
+                <i class="fab fa-github"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main class="main-content d-fx">
+        <div class="component-desc fx-col">
+            <h2>Ratings</h2>
+            <p>
+                Ratings are used to rate a product or a service. You can create normal star ratings by copying the given classes in your HTML.
+                You can use two variants of Ratings in your project,<code>Star Ratings</code> & <code>Ratings badge</code>. Star ratings provide a visual represantation
+                while Ratings badge provides a numeric rating. Both come in 3 sizes, use following classes for each size - 
+                <ul>
+                    <li><code>.ratings-sm </code>for small ratings</li>
+                    <li><code>.ratings-md </code>for medium size</li>
+                    <li><code>.ratings-sm </code>for large size</li>
+                </ul>
+               <p> For star ratings, you can use <code>.icon-filled</code> or <code>.icon-half-filled</code> to fill the icon completely or partially.</p>
+            </p>
+        </div>
+        <aside class="ui-drawer">
+            <h2>Variants</h2>
+            <div class="ui-drawer-content">
+                <ul class="fx-col">
+                    <button data-target="1" class="ui-btn ui-btn-outline-primary toggle-variant-btn active">
+                        Star Ratings
+                    </button> 
+                    <button data-target="2" class="ui-btn ui-btn-outline-primary toggle-variant-btn">
+                        Ratings Badge
+                    </button>           
+                </ul>
+                
+            </div>
+        </aside>         
+
+        <section class="main-demo-content d-fx">
+            
+            <div class="tabs-btn-list p-rel d-fx">
+                <button class="ui-btn active ui-btn-tab ui-btn-transparent" data-target="preview-blocks">Preview</button>
+                <button class="ui-btn ui-btn-tab ui-btn-transparent" data-target="code-blocks">Code</button>
+                <div class="bottom-border"></div>
+            </div>
+
+            <div id="preview-blocks" class="preview-blocks tab d-fx">
+
+                <div id="preview-block-1" class="preview-block">          
+                    <div class="ratings-container fx-col">
+                        <div class="ui-ratings-wrapper ratings-sm d-fx">
+                            <i class="fas fa-star icon-filled"></i>
+                            <i class="fas fa-star icon-filled"></i>
+                            <i class="fas fa-star icon-filled"></i>
+                            <i class="fas fa-star icon-half-filled"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="ui-ratings-wrapper ratings-md d-fx">
+                            <i class="fas fa-star icon-filled"></i>
+                            <i class="fas fa-star icon-filled"></i>
+                            <i class="fas fa-star icon-filled"></i>
+                            <i class="fas fa-star icon-half-filled"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="ui-ratings-wrapper ratings-lg d-fx">
+                            <i class="fas fa-star icon-filled"></i>
+                            <i class="fas fa-star icon-filled"></i>
+                            <i class="fas fa-star icon-filled"></i>
+                            <i class="fas fa-star icon-half-filled"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="preview-block-2" class="hide preview-block">
+                    <div class="badges-wrapper d-fx gap-lg">
+                        <div class="ui-ratings-badge ratings-sm">
+                            <i class="fas fa-star"></i>
+                            <span>4.5</span>
+                        </div>
+                        <div class="ui-ratings-badge ratings-sm ui-ratings-badge-green">
+                            <i class="fas fa-star"></i>
+                            <span>4.5</span>
+                        </div>
+                        <div class="ui-ratings-badge ratings-md ui-ratings-badge-orange">
+                            <i class="fas fa-star"></i>
+                            <span>3.5</span>
+                        </div>
+                        <div class="ui-ratings-badge ratings-lg ui-ratings-badge-red">
+                            <i class="fas fa-star"></i>
+                            <span>2.5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="code-blocks" class="code-blocks tab d-fx hide">
+                <div id="code-block-1" class="code-block">
+<pre><code>
+    <div class="ui-ratings-wrapper ratings-sm d-fx">
+        <i class="fas fa-star icon-filled"></i>
+        <i class="fas fa-star icon-filled"></i>
+        <i class="fas fa-star icon-filled"></i>
+        <i class="fas fa-star icon-half-filled"></i>
+        <i class="fas fa-star"></i>
+    </div>
+    <div class="ui-ratings-wrapper ratings-md d-fx">
+        <i class="fas fa-star icon-filled"></i>
+        <i class="fas fa-star icon-filled"></i>
+        <i class="fas fa-star icon-filled"></i>
+        <i class="fas fa-star icon-half-filled"></i>
+        <i class="fas fa-star"></i>
+    </div>
+    <div class="ui-ratings-wrapper ratings-lg d-fx">
+        <i class="fas fa-star icon-filled"></i>
+        <i class="fas fa-star icon-filled"></i>
+        <i class="fas fa-star icon-filled"></i>
+        <i class="fas fa-star icon-half-filled"></i>
+        <i class="fas fa-star"></i>
+    </div>
+
+</code></pre>
+                </div>
+
+                <div id="code-block-2" class="code-block hide">
+<pre><code>
+    <div class="ui-ratings-badge ratings-sm">
+        <i class="fas fa-star"></i>
+        <span>4.5</span>
+    </div>
+    <div class="ui-ratings-badge ratings-sm ui-ratings-badge-green">
+        <i class="fas fa-star"></i>
+        <span>4.5</span>
+    </div>
+    <div class="ui-ratings-badge ratings-md ui-ratings-badge-orange">
+        <i class="fas fa-star"></i>
+        <span>3.5</span>
+    </div>
+    <div class="ui-ratings-badge ratings-lg ui-ratings-badge-red">
+        <i class="fas fa-star"></i>
+        <span>2.5</span>
+    </div>
+
+</code></pre>                  
+                </div>
+            </div>
+
+            <button class="ui-btn ui-btn-icon copy-btn"><i class="fas fa-copy"></i></button>
+        </section>
+
+    </main>
+
+    <footer>
+        <ul class="d-fx footer-links">
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/KISHANV02771497" class="ui-btn ui-btn-icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Vs-kishu" class="ui-btn ui-btn-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kishanverma3498/" class="ui-btn ui-btn-icon">
+                <i class="fab fa-linkedin"></i>    
+            </a>
+        </ul>
+        <p class="copywright">Created by<a target="_blank" rel="noopener noreferrer" href="https://kishan03-portfolio.netlify.app/" class="ui-btn ui-btn-link">Kishan</a> </p>
+    </footer>
+
+    <button class="theme-toggle-btn ui-btn ui-btn-fab">
+        <i class="fas fa-moon"></i>
+    </button>
+    <!-- Highlighting the code snippets -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+
+    <script src="../docs.js"></script>
+
+</body>
+</html>

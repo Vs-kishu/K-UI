@@ -1,0 +1,77 @@
+:root {
+    --ui-primary-color: hsl(48, 100%, 47%);
+    --ui-primary-light: hsl(53, 100%, 51%);
+    --ui-primary-darkest: hsl(0, 0%, 2%);
+
+    --ui-text-on-primary-color: hsl(0, 0%, 4%);
+    --ui-secondary-color: hsl(234, 22%, 44%);
+    --ui-secondary-darker: hsl(234, 22%, 35%);
+
+    --ui-accent-color: hsl(48, 98%, 53%);
+    --ui-accent-darker: hsla(48, 98%, 46%, 0.838);
+
+    --ui-diabled-color: hsl(233, 18%, 80%);
+
+    /* Overlays */
+    --ui-primary-overlay: hsla(234, 71%, 20%, 0.4);
+    --ui-gray-overlay: hsla(0, 0%, 0%, 0.3);
+    --ui-white-overlay: hsla(0, 0%, 100%, 0.3);
+    --ui-accent-overlay: hsla(67, 87%, 85%, 0.4);
+    --ui-bg-dark-overlay: hsla(0, 0%, 0%, 0.4);
+    /* Helper colors */
+
+    --ui-white: hsl(0, 0%, 100%);
+    --ui-gray: hsl(208, 7%, 46%);
+    --ui-gray-dark: hsl(210, 10%, 38%);
+    --ui-success: hsl(152, 69%, 31%);
+    --ui-info: hsl(190, 90%, 50%);
+    --ui-warning: hsl(45, 100%, 51%);
+    --ui-error: hsl(354, 70%, 54%);
+    --err: 354, 70%, 51%;
+    --ui-light: hsl(210, 17%, 90%);
+    --ui-dark: hsl(210, 11%, 15%);
+    --ui-gradient: linear-gradient(180deg, hsla(0, 0%, 100%, 0.15), rgba(255, 255, 255, 0));
+    --ui-box-shadow: inset 0px 0px 5px hsla(0, 0%, 0%, 0.2), inset 0px 0px 10px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 0, 0.3);
+    --ui-bg-teal-light: hsla(180, 100%, 25%, 0.2);
+    --ui-bg-teal-dark: hsla(180, 100%, 25%, 0.4);
+
+
+    /* Background foreground */
+
+    --ui-background: hsl(0, 0%, 100%);
+    --ui-background-lighter: hsl(0, 0%, 90%);
+    --ui-text: hsl(71, 38%, 16%);
+    --ui-text-secondary: hsl(234, 22%, 44%);
+
+    /* Box Shadows */
+    --bs-elevated: 2px 2px 25px 10px hsla(0, 0%, 0%, 0.4);
+    --bs-light: 0 0 20px 0 hsla(0, 0%, 0%, 0.4);
+    --bs-lighter: 2px 2px 10px 2px hsla(0, 0%, 0%, 0.2);
+
+}
+
+.dark-mode {
+    --ui-primary-color: hsl(48, 100%, 47%);
+    --ui-text-on-primary-color: hsl(198, 100%, 86%);
+    --ui-primary-darker: hsl(233, 83%, 16%);
+    --ui-primary-lighter: hsl(0, 0%, 96%);
+
+    --ui-secondary-color: hsl(234, 23%, 44%);
+    --bg--ui-secondary-darker: hsl(234, 23%, 46%);
+
+    --bg--ui-accent-color: hsl(180, 100%, 41%);
+    --text--ui-accent-color: hsl(180, 100%, 65%);
+    --bg--ui-accent-darker: hsl(180, 100%, 30%);
+
+
+    --bg--ui-primary-overlay: hsla(234, 81%, 19%, 0.4);
+    --bg--ui-gray-overlay: hsla(0, 0%, 0%, 0.3);
+    --bg--ui-accent-overlay: hsla(180, 70%, 37%, 0.4);
+
+    /* Text and Background */
+    --ui-background: hsl(195, 7%, 11%);
+    --ui-background-lighter: hsl(195, 6%, 17%);
+    --ui-text: hsl(0, 0%, 100%);
+    --ui-text-secondary: hsl(35, 21%, 75%);
+
+}

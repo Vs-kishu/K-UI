@@ -1,0 +1,210 @@
+@import url(../stylesheets/main.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/atlas.min.css);
+
+/* Base stylesheet for all the pages */
+
+body {
+    overflow-y: scroll;
+    background-color: var(--ui-background);
+    color: var(--ui-text);
+}
+
+.theme-toggle-btn{
+    background-color: var(--ui-text);
+    color: var(--ui-background);
+    bottom: 25px;
+    right: 5px;
+}
+
+/* Components list drawer  */
+.ui-drawer-main {
+    height: 100vh;
+}
+
+.ui-drawer-modal .ui-drawer-header {
+    padding-left: var(--space-lg);
+
+}
+
+/* Main Header */
+.main-header {
+    box-shadow: var(--bs-light);
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    gap: var(--space-xlg);
+
+}
+
+/* logo  */
+.header-brand {
+    width: 10rem;
+    width: clamp(8rem, -0.875rem + 20vw, 8rem);
+}
+
+
+/*******************Main content**********************/
+
+.main-content {
+    padding: clamp(var(--space-sm), -0.875rem + 8.33vw, var(--space-xxlg));
+    gap: var(--space-xlg);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.component-desc{
+    flex-basis: 100%;
+}
+
+.toggle-variant-btn.active {
+    background-color: var(--ui-primary-color);
+    color: var(--ui-white);
+}
+
+/* Container containing preview and code blocks for component  */
+.main-demo-content {
+    flex: 1 1 70%;
+    flex-direction: column;
+    gap: var(--space-sm);
+    max-width: 100%;
+    overflow: auto;
+    align-items: center;
+    position: relative;
+    min-height: 70vh;
+}
+
+.tabs-btn-list {
+    box-shadow: var(--bs-light);
+    width: 100%;
+}
+
+.tabs-btn-list .ui-btn {
+    flex: 1;
+}
+
+.tabs-btn-list .ui-btn:hover {
+    background-color: hsla(49, 80%, 51%, 0.993);
+}
+
+.tabs-btn-list .ui-btn:focus {
+    box-shadow: none;
+}
+
+.tabs-btn-list .ui-btn.active {
+    border-color: transparent;
+    background-color: hsla(46, 93%, 48%, 0.852);
+}
+
+.bottom-border {
+    background-color: var(--ui-white);
+    bottom: 0;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    transition: all ease 0.3s;
+    width: 50%;
+}
+
+.tab {
+    flex-grow: 1;
+    padding: var(--space-md);
+    padding: clamp(var(--space-xs), -0.875rem + 8.33vw, var(--space-lg));
+    width: 100%;
+    position: relative;
+    overflow: auto;
+}
+
+.preview-block,
+.code-block
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.preview-block >*,
+.code-block >*{
+    margin: auto;
+}
+
+.code-blocks {
+    max-height: 80vh;
+    justify-content: start;
+    align-items: start;
+}
+
+.hide {
+    display: none;
+}
+
+.tabs-btn-list .ui-icon-label-btn {
+    justify-content: center;
+}
+
+.copy-btn {
+    position: absolute;
+    right: 1.5rem;
+    top: 3.125rem;
+    font-size: 2rem;
+}
+
+pre {
+    box-shadow: var(--bs-elevated);
+    min-width: 55vw;
+}
+
+pre code {
+    font-size: clamp(var(--fs-sm), -2.875rem + 8.33vw, var(--fs-md));
+}
+
+footer {
+    min-height: 20vh;
+    margin-top: var(--space-xlg);
+    padding-top: var(--space-md);
+    background-color: var(--ui-primary-color);
+    border-top-left-radius: 50% 20%;
+    border-top-right-radius: 50% 20%;
+    text-align: center;
+}
+
+
+.footer-links {
+    gap: var(--space-md);
+    justify-content: center;
+}
+
+.footer-links .ui-btn {
+    font-size: var(--fs-lg);
+    color: var(--ui-dark);
+}
+
+footer p {
+    margin-top: var(--space-md);
+    color: var(--ui-white);
+    font-size: var(--fs-md);
+}
+
+@media screen and (max-width: 48em) {
+    .ui-header{
+        justify-content: space-between;
+        gap: var(--space-sm);
+    }
+    .ui-heading{
+        order: -1;
+    }
+    .ui-nav{
+        margin: auto;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .main-content .ui-drawer{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .preview-block{
+        justify-content: start;
+        align-items: start;
+    }
+}

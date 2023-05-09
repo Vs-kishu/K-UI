@@ -1,0 +1,49 @@
+.ui-header{
+    align-items: center;
+    background-color: var(--ui-primary-color);
+    border-radius: 0 0 var(--space-md) var(--space-md);
+    color: var(--ui-dark);
+    font-size: var(--fs-md);
+    padding: var(--space-sm) var(--space-lg); /* Fallback value for padding*/
+    padding: var(--space-sm) clamp(var(--space-sm), -0.875rem + 8.33vw, var(--space-xxlg));
+}
+
+.ui-heading h2{
+    font-size: var(--fs-xlg); /* Fallback value */
+    font-size: clamp(var(--fs-lg), -0.875rem + 8.33vw, var(--fs-xxlg));
+}
+
+.ui-nav{
+    margin-left: auto;
+}
+
+.ui-nav a.ui-btn{
+    color: var(--ui-dark);
+}
+
+/************ Fixed Heaeder **************/
+
+.ui-header-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/************ Prominent Heaeder **************/
+
+.ui-header-prominent .ui-heading{
+    flex-grow:1;
+    order: 1;
+    flex-basis: 100%;
+}
+
+/************ Short Header **************/
+.ui-header-short{
+    border-radius: 0 0 var(--radius-lg) 0;
+    width: fit-content;
+}
+
+.ui-header-short .ui-nav{
+    margin-left: unset;
+}

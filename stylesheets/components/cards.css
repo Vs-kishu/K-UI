@@ -1,0 +1,108 @@
+.ui-card{
+    align-self: center;
+    padding: var(--space-sm);
+    border-radius: var(--radius-xs);
+    background-color: var(--ui-background);
+    gap: var(--space-xs);
+    max-width: 16rem;
+    position: relative;
+    border: solid 1px var(--ui-gray);
+}
+
+.ui-card-banner img{
+    object-fit: cover;
+    border-radius: var(--radius-xs) ;
+}
+
+.ui-card-header h2{
+    color: var(--ui-primary-lighter);
+}
+
+.ui-card-header h3{
+    font-size: 0.9rem;
+}
+
+.ui-card-body p{
+    font-size: .9rem;
+    color: var(--ui-text-secondary);
+}
+
+.pdt-price{
+    gap: ar(--space-sm);
+    align-items: center;
+}
+
+.curr-price{
+    font-size: var(--fs-md);
+    color: var(--ui-success);
+}
+
+.prev-price{
+    font-size: var(--fs-sm);
+    color: var(--ui-text-secondary);
+    text-decoration: line-through;
+}
+
+.ui-card-footer{
+    justify-content: space-between;
+}
+
+.ui-card-footer-links .ui-btn{
+    font-size: 0.8rem;
+}
+
+/******** Cards with dismiss icon *********/
+
+.ui-card-dismiss-icon{
+    position: absolute;
+    background-color: var(--ui-primary-color);
+    top: -5px;
+    right: -5px;
+    font-size: var(--fs-md);
+    border-radius: 50%;
+    padding: 5px;
+    height: 1.8em;
+    width: 1.8em;
+}
+
+/******** Cards with text overlay *********/
+
+.text-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--ui-gray-overlay);
+    border-radius: inherit;
+}
+
+.text-overlay h2{
+    width: 100%;
+    background-color: var(--ui-background);
+    text-align: center;
+    font-size: var(--fs-md);
+}
+
+/******** Horizontal card *********/
+
+.ui-card-hor{
+    max-width: 30rem;
+}
+
+.ui-card-hor .ui-card-banner{
+    max-width: 50%;
+}
+
+.ui-card-hor .ui-card-banner img{
+    height: 100%;
+}
+
+.ui-card-footer-links{
+    align-items: stretch;
+}
+
+.ui-card.light-shadow{
+    border: none;
+    box-shadow: var(--bs-light);
+}

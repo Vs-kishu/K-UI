@@ -1,0 +1,50 @@
+
+/************ Typography *************/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&family=Montserrat:wght@400;500;600&family=Poppins&family=Raleway:wght@600&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+}
+
+h1{
+    font-size: var(--fs-xlg);
+    font-weight: 700;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h2{
+    font-size: var(--fs-lg);
+    font-weight:600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3{
+    font-size: var(--fs-md);
+    font-weight: 500;
+}
+
+h4{
+    font-size:var(--fs-sm);
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    font-size: var(--fs-md);
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: var(--ui-text-secondary);
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}

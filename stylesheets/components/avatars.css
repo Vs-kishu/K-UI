@@ -1,0 +1,42 @@
+
+.ui-avatar-circle{
+    border-radius: 50%;
+    position: relative;
+}
+
+.ui-avatar-rounded-square{
+    border-radius: 20%;
+    width: fit-content;
+    padding: 0;
+    position: relative;
+}
+
+.ui-avatar-xs{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.ui-avatar-sm{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.ui-avatar-md{
+    width: 4rem;
+    height: 4rem;
+}
+
+.ui-avatar-lg{
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+.ui-avatar-xlg{
+    width: 10rem;
+    height: 10rem;
+}
+
+.ui-avatar-img{
+    border-radius: inherit;
+    height: 100%;
+}

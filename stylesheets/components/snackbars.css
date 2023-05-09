@@ -1,0 +1,46 @@
+.ui-snackbar{
+    gap: var(--space-lg);
+    background-color: var(--ui-text);
+    padding: var(--space-sm);
+    border-radius: var(--radius-xs);
+    width: fit-content;
+    max-width: 35rem;
+    position: relative;
+    z-index: 99;
+}
+
+.ui-snackbar-text{
+    color: var(--ui-background);
+}
+
+.ui-snackbar-link{
+    border: none;
+    background: transparent;
+    color: var(--ui-accent-color);
+    cursor: pointer;
+}
+
+
+.close-icon{
+    border: none;
+    background-color: transparent;
+    font-size: inherit;
+    color: #fff;
+    cursor: pointer;
+}
+
+.close-icon:hover{
+    color: #ccc;
+}
+
+
+/*************** Stacked Snackbar *****************/
+
+.ui-snackbar-stacked{
+    gap: var(--space-sm);
+    justify-content: flex-end;
+}
+
+.ui-snackbar-stacked p{
+    width: 100%;
+}

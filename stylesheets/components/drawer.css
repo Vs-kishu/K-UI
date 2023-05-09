@@ -1,0 +1,56 @@
+.ui-drawer{
+    font-size: var(--fs-md);
+    max-height: 100vh;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: var(--ui-background);
+    min-width: 18rem;
+    max-width: 90%;
+}
+
+.ui-drawer-header h3{
+    color: var(--ui-gray);
+}
+
+.ui-drawer hr{
+    border: none;
+    border-top: solid 1px var(--ui-gray);
+    margin: 5px auto;
+    width: 90%;
+    
+}
+
+.ui-drawer-content{
+    margin-top: 20px;
+    overflow-y: auto;
+    max-height: 85%;
+    padding: var(--space-md);
+}
+
+
+/********* Dissmissible drawer **********/
+.ui-drawer-dismissible{
+    width: 0;
+    padding: 0;
+    transition: all ease 0.3s;
+}
+
+.ui-drawer-dismissible.active{
+    width: 18rem;
+}
+
+
+/********* Modal drawer **********/
+
+.ui-drawer-modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    z-index: 100;
+    transition: left ease 0.9s;
+}
+
+.ui-drawer-modal.active{
+    left: 0;
+}
